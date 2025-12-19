@@ -4,22 +4,37 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/auth-service-e2e"
-    },
-    {
-      "path": "./apps/auth-service"
+      "path": "./apps/api-gateway"
     },
     {
       "path": "./apps/api-gateway-e2e"
     },
     {
-      "path": "./apps/api-gateway"
+      "path": "./apps/auth-service"
+    },
+    {
+      "path": "./apps/auth-service-e2e"
     },
     {
       "path": "./libs/shared/types"
     },
     {
+      "path": "./libs/shared/dto"
+    },
+    {
       "path": "./libs/shared/utils"
+    },
+    {
+      "path": "./libs/shared/data-access"
+    },
+    {
+      "path": "./libs/auth/api"
+    },
+    {
+      "path": "./libs/auth/domain"
+    },
+    {
+      "path": "./libs/auth/data-access"
     }
   ]
 }

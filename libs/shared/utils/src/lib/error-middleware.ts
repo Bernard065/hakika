@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import { AppError } from './errors';
-import { ErrorResponse } from '@hakika/types';
+import { ErrorResponse } from '@hakika/shared-types';
+import { AppError } from './error-handler';
 
 export function errorMiddleware(
   err: Error,

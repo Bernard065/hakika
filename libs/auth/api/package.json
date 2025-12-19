@@ -1,5 +1,5 @@
 {
-  "name": "@hakika/shared-utils",
+  "name": "@hakika/auth-api",
   "version": "0.0.1",
   "private": true,
   "main": "./dist/index.js",
@@ -15,7 +15,6 @@
     }
   },
   "dependencies": {
-    "tslib": "^2.3.0",
-    "express": "^4.22.1"
+    "tslib": "^2.3.0"
   }
 }

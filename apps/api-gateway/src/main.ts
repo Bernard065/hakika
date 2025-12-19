@@ -4,7 +4,7 @@ import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import rateLimit from 'express-rate-limit';
 import proxy from 'express-http-proxy';
-import { AuthenticatedRequest } from '@hakika/types';
+import { AuthenticatedRequest } from '@hakika/shared-types';
 
 const app = express();
 

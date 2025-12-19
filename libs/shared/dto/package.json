@@ -1,7 +1,8 @@
 {
-  "name": "@hakika/shared-utils",
+  "name": "@hakika/shared-dto",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -15,7 +16,6 @@
     }
   },
   "dependencies": {
-    "tslib": "^2.3.0",
-    "express": "^4.22.1"
+    "tslib": "^2.3.0"
   }
 }

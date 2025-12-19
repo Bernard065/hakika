@@ -7,14 +7,17 @@
   },
   "private": true,
   "dependencies": {
+    "@prisma/client": "6.19",
     "axios": "^1.13.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^4.22.1",
     "express-http-proxy": "^2.1.2",
     "express-rate-limit": "^8.2.1",
     "morgan": "^1.10.1",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.2.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
@@ -41,7 +44,7 @@
     "@types/express-http-proxy": "^1.6.7",
     "@types/jest": "^30.0.0",
     "@types/morgan": "^1.9.10",
-    "@types/node": "20.19.9",
+    "@types/node": "^20.19.9",
     "@types/swagger-ui-express": "^4.1.8",
     "esbuild": "^0.19.2",
     "eslint": "^9.8.0",
@@ -52,6 +55,7 @@
     "jsonc-eslint-parser": "^2.1.0",
     "nx": "22.3.1",
     "prettier": "~3.6.2",
+    "prisma": "6.19",
     "react-refresh": "^0.10.0",
     "ts-jest": "^29.4.0",
     "ts-node": "10.9.1",
@@ -62,6 +66,9 @@
   },
   "workspaces": [
     "apps/*",
-    "libs/shared/*"
+    "libs/shared/*",
+    "libs/auth/api",
+    "libs/auth/domain",
+    "libs/auth/data-access"
   ]
 }
