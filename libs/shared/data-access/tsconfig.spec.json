@@ -1,7 +1,10 @@
 {
   "extends": "../../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/jest",
+    "composite": true,
+    "declaration": true,
+    "outDir": "../../../dist/out-tsc/libs/shared/data-access/jest",
+    "tsBuildInfoFile": "../../../dist/out-tsc/libs/shared/data-access/tsconfig.spec.tsbuildinfo",
     "types": ["jest", "node"]
   },
   "include": [

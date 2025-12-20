@@ -1,10 +1,12 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "declaration": true,
     "outDir": "out-tsc/@hakika/api-gateway-e2e",
     "esModuleInterop": true,
     "noUnusedLocals": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "moduleResolution": "nodenext"
   },
   "include": ["jest.config.ts", "src/**/*.ts"],
   "references": []

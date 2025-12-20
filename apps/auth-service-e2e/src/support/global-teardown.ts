@@ -1,5 +1,8 @@
 import { killPort } from '@nx/node/utils';
-/* eslint-disable */
+
+declare global {
+  var __TEARDOWN_MESSAGE__: string;
+}
 
 module.exports = async function () {
   // Put clean up logic here (e.g. stopping services, docker-compose, etc.).

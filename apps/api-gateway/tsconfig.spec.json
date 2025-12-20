@@ -1,8 +1,11 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/jest",
-    "types": ["jest", "node"]
+    "composite": true,
+    "declaration": true,
+    "outDir": "../../dist/out-tsc/apps/api-gateway/jest",
+    "types": ["jest", "node"],
+    "tsBuildInfoFile": "../../dist/out-tsc/apps/api-gateway/tsconfig.spec.tsbuildinfo"
   },
   "include": [
     "jest.config.ts",

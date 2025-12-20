@@ -1,4 +1,4 @@
-import { dataAccess } from './data-access';
+import { dataAccess } from './data-access.js';
 
 describe('dataAccess', () => {
   it('should work', () => {

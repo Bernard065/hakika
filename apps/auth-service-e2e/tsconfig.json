@@ -1,11 +1,12 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "out-tsc/@hakika/auth-service-e2e",
-    "esModuleInterop": true,
-    "noUnusedLocals": false,
-    "noImplicitAny": false
+    "declaration": true,
+    "outDir": "../../dist/out-tsc/apps/auth-service-e2e",
+    "tsBuildInfoFile": "../../dist/out-tsc/apps/auth-service-e2e/tsconfig.tsbuildinfo",
+    "types": ["jest", "node"],
+    "moduleResolution": "nodenext"
   },
-  "include": ["jest.config.ts", "src/**/*.ts"],
+  "include": ["src/**/*.ts", "test/**/*.ts"],
   "references": []
 }

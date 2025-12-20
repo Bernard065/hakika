@@ -1,10 +1,12 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "types": ["node", "express"],
+    "outDir": "../../dist/apps/api-gateway",
     "rootDir": "src",
-    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
+    "types": ["node", "express"],
+    "composite": true,
+    "declaration": true,
+    "tsBuildInfoFile": "../../dist/apps/api-gateway/tsconfig.app.tsbuildinfo"
   },
   "include": ["src/**/*.ts"],
   "exclude": [

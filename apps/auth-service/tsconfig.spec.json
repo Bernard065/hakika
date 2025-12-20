@@ -1,7 +1,10 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/jest",
+    "composite": true,
+    "declaration": true,
+    "outDir": "../../dist/out-tsc/apps/auth-service/jest",
+    "tsBuildInfoFile": "../../dist/out-tsc/apps/auth-service/tsconfig.spec.tsbuildinfo",
     "types": ["jest", "node"]
   },
   "include": [
