@@ -3,7 +3,16 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "npx nx run-many --target=serve --all"
+    "dev": "nx run-many -t serve --all",
+    "build": "nx run-many -t build",
+    "test": "nx run-many -t test",
+    "lint": "nx run-many -t lint",
+    "typecheck": "nx run-many -t typecheck",
+    "validate": "nx run-many -t lint test build typecheck",
+    "prisma:generate": "nx run shared-data-access:generate",
+    "prisma:studio": "nx run shared-data-access:studio",
+    "nx": "nx",
+    "reset": "nx reset"
   },
   "private": true,
   "dependencies": {
