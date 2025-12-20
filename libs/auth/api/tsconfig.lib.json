@@ -9,7 +9,17 @@
     "types": ["node"]
   },
   "include": ["src/**/*.ts"],
-  "references": [],
+  "references": [
+    {
+      "path": "../../shared/utils/tsconfig.lib.json"
+    },
+    {
+      "path": "../../shared/data-access/tsconfig.lib.json"
+    },
+    {
+      "path": "../../shared/dto/tsconfig.lib.json"
+    }
+  ],
   "exclude": [
     "jest.config.ts",
     "jest.config.cts",
