@@ -19,6 +19,8 @@
     "express": "^4.22.1",
     "@hakika/shared-dto": "0.0.1",
     "@hakika/shared-data-access": "0.0.1",
-    "@hakika/shared-utils": "0.0.1"
+    "@hakika/shared-utils": "0.0.1",
+    "@hakika/auth-domain": "0.0.1",
+    "bcrypt": "^6.0.0"
   }
 }

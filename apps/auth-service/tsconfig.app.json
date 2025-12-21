@@ -5,9 +5,11 @@
     "declaration": true,
     "outDir": "../../dist/apps/auth-service",
     "rootDir": "src",
-    "tsBuildInfoFile": "../../dist/apps/auth-service/tsconfig.app.tsbuildinfo"
+    "tsBuildInfoFile": "../../dist/apps/auth-service/tsconfig.app.tsbuildinfo",
+    "resolveJsonModule": true
   },
-  "include": ["src/**/*.ts"],
+  "files": ["src/main.ts", "src/config/swagger-output.json"],
+  "include": ["src/**/*.ts", "src/**/*.json"],
   "exclude": [
     "src/**/*.spec.ts",
     "test/**/*.ts",
@@ -15,6 +17,9 @@
     "eslint.config.js"
   ],
   "references": [
+    {
+      "path": "../../libs/auth/api/tsconfig.lib.json"
+    },
     {
       "path": "../../libs/shared/utils/tsconfig.lib.json"
     }
