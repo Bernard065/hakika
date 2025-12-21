@@ -8,6 +8,9 @@ import {
 
 const router: Router = express.Router();
 
+// Apply rate limiter to all auth routes
+router.use(authEndpointLimiter);
+
 /**
  * @route   POST /api/auth/register
  * @desc    Initiate user registration - sends OTP to email
