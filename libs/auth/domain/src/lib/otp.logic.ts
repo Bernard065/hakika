@@ -17,7 +17,6 @@ const generateOtp = (length: number): string => {
   return otp;
 };
 
-
  // Check if user can request an OTP
 export const checkOtpRestrictions = async (
   email: string
@@ -92,9 +91,10 @@ export const sendOtp = async (
     
     await pipeline.exec();
 
-    console.log(`[sendOtp] OTP sent successfully to ${email}`);
+  console.log('[sendOtp] OTP sent successfully to %s', email);
   } catch (error) {
-    console.error(`[sendOtp] Failed for ${email}:`, error);
+    console.error('[sendOtp] Failed for %s:', email, error);
+
     
     // If email failed, don't update Redis - let user retry
     if (error instanceof Error && error.message.includes('Failed to send email')) {
@@ -167,7 +167,8 @@ export const verifyOtp = async (
       redis.del(failureKey)
     ]);
 
-    console.log(`[verifyOtp] OTP verified successfully for ${email}`);
+    console.log('[verifyOtp] OTP verified successfully for %s', email);
+
     return true;
   } catch (error) {
     // Re-throw known errors
