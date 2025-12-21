@@ -84,8 +84,11 @@ export class ServiceUnavailableError extends AppError {
 
 // Rate Limit Error
 export class RateLimitError extends AppError {
-  constructor(message = 'Too Many Requests') {
+  public readonly retryAfter?: number;
+
+  constructor(message = 'Too Many Requests', retryAfter?: number) {
     super(message, 429, true);
+    this.retryAfter = retryAfter;
   }
 }
 

@@ -17,6 +17,7 @@
   "dependencies": {
     "tslib": "^2.3.0",
     "@hakika/shared-data-access": "0.0.1",
-    "@hakika/shared-utils": "0.0.1"
+    "@hakika/shared-utils": "0.0.1",
+    "@hakika/shared-types": "0.0.1"
   }
 }
