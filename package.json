@@ -51,7 +51,7 @@
     "@nx/node": "22.3.1",
     "@nx/web": "22.3.1",
     "@nx/webpack": "22.3.1",
-    "@nx/workspace": "22.3.1",
+    "@nx/workspace": "22.3.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@svgr/webpack": "^8.0.1",
     "@swc-node/register": "~1.9.1",
